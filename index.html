@@ -41,7 +41,7 @@
                             <label>Name</label><br><br>
                             <input type="text" name="Name" placeholder='Name' required><br><br>
                             <label>Phone</label><br><br>
-                            <input type="number" name="Phone" placeholder='Phone Number' required><br>
+                            <input type="number" onchange="if (this.value.length != (10 || 12)) swal('Info!', 'The typed phone number is Wrong 😯', 'info') " name="Phone" placeholder='Phone Number' required><br>
                         </div>
                         <div class='form-field'>
                             <label>Email</label><br><br>
